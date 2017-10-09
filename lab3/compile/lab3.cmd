@@ -1,0 +1,1 @@
+-w -s "c:\POCP\lab3\library.cfg"  -j "c:\POCP\lab3\lab3\projlib.cfg"  -d "c:\POCP\lab3\lab3\compile"   -work lab3  -O3 -e 100 -2002 "c:\POCP\lab3\lab3\src\Task9\TestBench\jkff_TB.vhd"

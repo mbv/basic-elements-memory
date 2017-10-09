@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available." 
+MESSAGE "File: c:\POCP\lab3\lab3\src\Task9\TestBench\jkff_TB.vhd" 
+MESSAGE "Compile Entity "jkff_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "jkff_tb"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]" 

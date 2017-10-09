@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/POCP/lab3_nagibator/lab3/DFF_Enable_Async.xst" -ofn "C:/POCP/lab3_nagibator/lab3/DFF_Enable_Async.syr" 

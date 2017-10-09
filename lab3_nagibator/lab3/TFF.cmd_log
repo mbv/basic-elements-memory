@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/POCP/lab3_nagibator/lab3/TFF.xst" -ofn "C:/POCP/lab3_nagibator/lab3/TFF.syr" 

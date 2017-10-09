@@ -1,0 +1,4 @@
+vhdtdtfi -lib work NOR2.vhd -lib work RS_Latch_Param.vhd -prj lab3 -o RS_Latch_Param.spl -module RS_Latch_Param -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 RS_Latch_Param.spl C:/POCP/lab3_nagibator/lab3/RS_Latch_Param.sym 
+vhdtdtfi -prj lab3 -o C:/POCP/lab3_nagibator/lab3/RS_Latch_Param.tfi -module RS_Latch_Param -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work NOR2.vhd -lib work RS_Latch_Param.vhd 
+xst -intstyle ise -ifn "C:/POCP/lab3_nagibator/lab3/RS_Latch_Param.xst" -ofn "C:/POCP/lab3_nagibator/lab3/RS_Latch_Param.syr" 

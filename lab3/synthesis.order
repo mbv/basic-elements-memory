@@ -1,0 +1,16 @@
+i<>.\src\BistbleElement.vhd
+i<>.\src\Inv.vhd
+i<>.\src\RS_Latch.vhd
+i<>.\src\NOR2.vhd
+i<>.\src\AND2.vhd
+i<>.\src\RS_Latch_Param.vhd
+i<>.\src\D_Latch.vhd
+i<>.\src\NOR2_Param.vhd
+i<>.\src\D_Lanch_Param.vhd
+i<>.\src\D_Enable_Latch.vhd
+i<>.\src\D_Enable_Latch_Param.vhd
+i<>.\src\DFF.vhd
+i<>.\src\DFF_Enable_Async.vhd
+i<>.\src\TFF.vhd
+i<>.\src\RSFF.vhd
+i<>.\src\JKFF.vhd

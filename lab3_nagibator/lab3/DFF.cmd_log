@@ -1,0 +1,3 @@
+vhdtdtfi -lib work DFF.vhd -prj lab3 -o DFF.spl -module DFF -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 DFF.spl C:/POCP/lab3_nagibator/lab3/DFF.sym 
+xst -intstyle ise -ifn "C:/POCP/lab3_nagibator/lab3/DFF.xst" -ofn "C:/POCP/lab3_nagibator/lab3/DFF.syr" 

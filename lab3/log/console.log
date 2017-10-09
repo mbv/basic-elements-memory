@@ -1,0 +1,444 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -work lab3 -2002  $dsn/src/Task1/BistbleElement.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task1\BistbleElement.vhd
+# Compile Entity "BistableElement"
+# Compile Architecture "Struct" of Entity "BistableElement"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+runscript -do "c:\POCP\lab3\lab3\src\Task1\TestBench\bistableelement_TB_runtest.do"
+SetActiveLib -work
+comp -include "$dsn\src\Task1\BistbleElement.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task1\BistbleElement.vhd
+# Compile Entity "BistableElement"
+# Compile Architecture "Struct" of Entity "BistableElement"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+comp -include "$dsn\src\Task1\TestBench\bistableelement_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task1\TestBench\bistableelement_TB.vhd
+# Compile Entity "bistableelement_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "bistableelement_tb"
+# Compile Configuration "TESTBENCH_FOR_bistableelement"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+asim +access +r TESTBENCH_FOR_bistableelement 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6004 kB (elbread=1023 elab2=4889 kernel=90 sdf=0)
+# KERNEL: ASDB file was created in location c:\POCP\lab3\lab3\src\wave.asdb
+#  6:25 PM, October 9, 2017
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_bistableelement
+wave 
+wave -noreg Q
+wave -noreg nQ
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\bistableelement_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_bistableelement   
+run 1us
+# 2 signal(s) traced.
+# KERNEL: stopped at time: 1 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+runscript -do "c:\POCP\lab3\lab3\src\Task2\TestBench\rs_latch_param_TB_runtest.do"
+SetActiveLib -work     
+comp -include "$dsn\src\Task2\RS_Latch.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task2\RS_Latch.vhd
+# Compile Entity "RS_Latch"
+# Compile Architecture "Struct" of Entity "RS_Latch"
+# Compile Architecture "Beh" of Entity "RS_Latch"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+comp -include "$dsn\src\Task2\RS_Latch_Param.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task2\RS_Latch_Param.vhd
+# Compile Entity "RS_Latch_Param"
+# Compile Architecture "Struct" of Entity "RS_Latch_Param"
+# Compile Architecture "Beh" of Entity "RS_Latch_Param"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+comp -include "$dsn\src\Task2\TestBench\rs_latch_param_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task2\TestBench\rs_latch_param_TB.vhd
+# Compile Entity "rs_latch_param_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rs_latch_param_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim +access +r TESTBENCH_FOR_rs_latch_param 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6009 kB (elbread=1023 elab2=4894 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\POCP\lab3\lab3\src\wave.asdb
+#  6:26 PM, October 9, 2017
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_rs_latch_param
+wave 
+wave -noreg R
+wave -noreg S
+wave -noreg Q_struct
+wave -noreg nQ_struct 
+wave -noreg Q_beh
+wave -noreg nQ_beh  
+wave -noreg Q2_struct
+wave -noreg nQ2_struct 
+wave -noreg Q2_beh
+wave -noreg nQ2_beh
+
+run 1 us
+# 10 signal(s) traced.
+# KERNEL: stopped at time: 1 us
+runscript -do "c:\POCP\lab3\lab3\src\Task3\TestBench\d_latch_TB_runtest.do"
+SetActiveLib -work
+comp -include "$dsn\src\Task3\D_Latch.vhd"   
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task3\D_Latch.vhd
+# Compile Entity "D_Latch"
+# Compile Architecture "Struct" of Entity "D_Latch"
+# Compile Architecture "Beh" of Entity "D_Latch"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+comp -include "$dsn\src\Task3\D_Lanch_Param.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task3\D_Lanch_Param.vhd
+# Compile Entity "D_Latch_Param"
+# Compile Architecture "Struct" of Entity "D_Latch_Param"
+# Compile Architecture "Beh" of Entity "D_Latch_Param"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+comp -include "$dsn\src\Task3\TestBench\d_latch_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task3\TestBench\d_latch_TB.vhd
+# Compile Entity "d_latch_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "d_latch_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim +access +r TESTBENCH_FOR_d_latch 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6010 kB (elbread=1023 elab2=4895 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\POCP\lab3\lab3\src\wave.asdb
+#  6:27 PM, October 9, 2017
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_d_latch
+wave 
+wave -noreg D
+
+wave -noreg Q_struct
+wave -noreg nQ_struct 
+wave -noreg Q_beh
+wave -noreg nQ_beh  
+wave -noreg Q2_struct
+wave -noreg nQ2_struct 
+wave -noreg Q2_beh
+wave -noreg nQ2_beh
+
+run 1 us
+# 9 signal(s) traced.
+# KERNEL: stopped at time: 1 us
+runscript -do "c:\POCP\lab3\lab3\src\Task4\TestBench\d_enable_latch_TB_runtest.do"
+SetActiveLib -work
+comp -include "$dsn\src\Task4\D_Enable_Latch.vhd"    
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task4\D_Enable_Latch.vhd
+# Compile Entity "D_Enable_Latch"
+# Compile Architecture "Struct" of Entity "D_Enable_Latch"
+# Compile Architecture "Beh" of Entity "D_Enable_Latch"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+comp -include "$dsn\src\Task4\D_Enable_Latch_Param.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task4\D_Enable_Latch_Param.vhd
+# Compile Entity "D_Enable_Latch_Param"
+# Compile Architecture "Struct" of Entity "D_Enable_Latch_Param"
+# Compile Architecture "Beh" of Entity "D_Enable_Latch_Param"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+comp -include "$dsn\src\Task4\TestBench\d_enable_latch_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task4\TestBench\d_enable_latch_TB.vhd
+# Compile Entity "d_enable_latch_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "d_enable_latch_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim +access +r TESTBENCH_FOR_d_enable_latch 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6012 kB (elbread=1023 elab2=4897 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\POCP\lab3\lab3\src\wave.asdb
+#  6:29 PM, October 9, 2017
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_d_enable_latch
+wave 
+wave -noreg D
+wave -noreg E
+wave -noreg Q_struct
+wave -noreg nQ_struct 
+wave -noreg Q_beh
+wave -noreg nQ_beh  
+wave -noreg Q2_struct
+wave -noreg nQ2_struct 
+wave -noreg Q2_beh
+wave -noreg nQ2_beh
+
+run 1 us
+# 10 signal(s) traced.
+# KERNEL: stopped at time: 1 us
+runscript -do "c:\POCP\lab3\lab3\src\Task5\TestBench\dff_TB_runtest.do"
+SetActiveLib -work
+comp -include "$dsn\src\Task5\DFF.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task5\DFF.vhd
+# Compile Entity "DFF"
+# Compile Architecture "Behavior" of Entity "DFF"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+comp -include "$dsn\src\Task5\TestBench\dff_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task5\TestBench\dff_TB.vhd
+# Compile Entity "dff_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dff_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim +access +r TESTBENCH_FOR_dff 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6005 kB (elbread=1023 elab2=4890 kernel=90 sdf=0)
+# KERNEL: ASDB file was created in location c:\POCP\lab3\lab3\src\wave.asdb
+#  6:30 PM, October 9, 2017
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_dff
+wave 
+wave -noreg D
+wave -noreg CLK
+wave -noreg Q
+
+run 1 us
+# 3 signal(s) traced.
+# KERNEL: stopped at time: 1 us
+acom -O3 -work lab3 -2002  $dsn/src/Task5/TestBench/dff_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task5\TestBench\dff_TB.vhd
+# Compile Entity "dff_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dff_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\Task5\DFF.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task5\DFF.vhd
+# Compile Entity "DFF"
+# Compile Architecture "Behavior" of Entity "DFF"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+comp -include "$dsn\src\Task5\TestBench\dff_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task5\TestBench\dff_TB.vhd
+# Compile Entity "dff_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dff_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+asim +access +r TESTBENCH_FOR_dff 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6005 kB (elbread=1023 elab2=4890 kernel=90 sdf=0)
+# KERNEL: ASDB file was created in location c:\POCP\lab3\lab3\src\wave.asdb
+#  6:33 PM, October 9, 2017
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_dff
+wave 
+wave -noreg D
+wave -noreg CLK
+wave -noreg Q
+
+run 1 us
+# 3 signal(s) traced.
+# KERNEL: stopped at time: 1 us
+runscript -do "c:\POCP\lab3\lab3\src\Task7\TestBench\tff_TB_runtest.do"
+SetActiveLib -work
+comp -include "$dsn\src\Task7\TFF.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task7\TFF.vhd
+# Compile Entity "TFF"
+# Compile Architecture "TFF" of Entity "TFF"
+# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
+comp -include "$dsn\src\Task7\TestBench\tff_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task7\TestBench\tff_TB.vhd
+# Compile Entity "tff_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "tff_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim +access +r TESTBENCH_FOR_tff 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6006 kB (elbread=1023 elab2=4891 kernel=90 sdf=0)
+# KERNEL: ASDB file was created in location c:\POCP\lab3\lab3\src\wave.asdb
+#  6:35 PM, October 9, 2017
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_tff
+wave 
+wave -noreg T
+wave -noreg E
+wave -noreg CLR
+wave -noreg CLK
+wave -noreg Q
+run 1 us
+# 5 signal(s) traced.
+# KERNEL: stopped at time: 1 us
+runscript -do "c:\POCP\lab3\lab3\src\Task9\TestBench\jkff_TB_runtest.do"
+SetActiveLib -work
+comp -include "$dsn\src\Task9\JKFF.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task9\JKFF.vhd
+# Compile Entity "JKFF"
+# Compile Architecture "JKFF" of Entity "JKFF"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+comp -include "$dsn\src\Task9\TestBench\jkff_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\POCP\lab3\lab3\src\Task9\TestBench\jkff_TB.vhd
+# Compile Entity "jkff_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "jkff_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim +access +r TESTBENCH_FOR_jkff 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6007 kB (elbread=1023 elab2=4892 kernel=90 sdf=0)
+# KERNEL: ASDB file was created in location c:\POCP\lab3\lab3\src\wave.asdb
+#  6:36 PM, October 9, 2017
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_jkff
+wave 
+wave -noreg J
+wave -noreg K
+wave -noreg CLK
+wave -noreg Q
+run 1 us
+# 4 signal(s) traced.
+# KERNEL: stopped at time: 1 us
+#  Simulation has been stopped

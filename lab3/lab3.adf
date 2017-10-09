@@ -1,0 +1,136 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=lab3
+
+[Library]
+lab3=.\lab3.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+lab3=.
+Active_lib=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=bistableelement_tb|testbench_for_bistableelement|1 d_enable_latch_tb|testbench_for_d_enable_latch|1 d_latch_tb|testbench_for_d_latch|1 dff_tb|testbench_for_dff|1 jkff_tb|testbench_for_jkff|1 rs_latch_param_tb|testbench_for_rs_latch_param|1 tff_tb|testbench_for_tff|1 
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+Task1=1
+Task1\TestBench=1
+Task2=1
+Task2\TestBench=1
+Task3=1
+Task3\TestBench=1
+Task4=1
+Task4\TestBench=1
+Task5=1
+Task5\TestBench=1
+Task6=1
+Task6\TestBench=1
+Task7=1
+Task7\TestBench=1
+Task8=1
+Task8\TestBench=1
+Task9=1
+Task9\TestBench=1
+
+[Files]
+/Inv.vhd=-1
+/NOR2.vhd=-1
+/AND2.vhd=-1
+/NOR2_Param.vhd=-1
+Task1/BistbleElement.vhd=-1
+Task1\TestBench/bistableelement_TB.vhd=-1
+Task1\TestBench/bistableelement_TB_runtest.do=-1
+Task2/RS_Latch_Param.vhd=-1
+Task2/RS_Latch.vhd=-1
+Task2\TestBench/rs_latch_param_TB.vhd=-1
+Task2\TestBench/rs_latch_param_TB_runtest.do=-1
+Task3/D_Lanch_Param.vhd=-1
+Task3/D_Latch.vhd=-1
+Task3\TestBench/d_latch_TB.vhd=-1
+Task3\TestBench/d_latch_TB_runtest.do=-1
+Task4/D_Enable_Latch_Param.vhd=-1
+Task4/D_Enable_Latch.vhd=-1
+Task4\TestBench/d_enable_latch_TB.vhd=-1
+Task4\TestBench/d_enable_latch_TB_runtest.do=-1
+Task5/DFF.vhd=-1
+Task5\TestBench/dff_TB.vhd=-1
+Task5\TestBench/dff_TB_runtest.do=-1
+Task6/DFF_Enable_Async.vhd=-1
+Task6\TestBench/dff_enable_async_TB.vhd=-1
+Task6\TestBench/dff_enable_async_TB_runtest.do=-1
+Task7/TFF.vhd=-1
+Task7\TestBench/tff_TB.vhd=-1
+Task7\TestBench/tff_TB_runtest.do=-1
+Task8/RSFF.vhd=-1
+Task8\TestBench/rsff_TB.vhd=-1
+Task8\TestBench/rsff_TB_runtest.do=-1
+Task9/JKFF.vhd=-1
+Task9\TestBench/jkff_TB.vhd=-1
+Task9\TestBench/jkff_TB_runtest.do=-1
+
+[Files.Data]
+.\src\Inv.vhd=VHDL Source Code
+.\src\NOR2.vhd=VHDL Source Code
+.\src\AND2.vhd=VHDL Source Code
+.\src\NOR2_Param.vhd=VHDL Source Code
+.\src\Task1\BistbleElement.vhd=VHDL Source Code
+.\src\Task1\TestBench\bistableelement_TB.vhd=VHDL Test Bench
+.\src\Task1\TestBench\bistableelement_TB_runtest.do=Macro
+.\src\Task2\RS_Latch_Param.vhd=VHDL Source Code
+.\src\Task2\RS_Latch.vhd=VHDL Source Code
+.\src\Task2\TestBench\rs_latch_param_TB.vhd=VHDL Test Bench
+.\src\Task2\TestBench\rs_latch_param_TB_runtest.do=Macro
+.\src\Task3\D_Lanch_Param.vhd=VHDL Source Code
+.\src\Task3\D_Latch.vhd=VHDL Source Code
+.\src\Task3\TestBench\d_latch_TB.vhd=VHDL Test Bench
+.\src\Task3\TestBench\d_latch_TB_runtest.do=Macro
+.\src\Task4\D_Enable_Latch_Param.vhd=VHDL Source Code
+.\src\Task4\D_Enable_Latch.vhd=VHDL Source Code
+.\src\Task4\TestBench\d_enable_latch_TB.vhd=VHDL Test Bench
+.\src\Task4\TestBench\d_enable_latch_TB_runtest.do=Macro
+.\src\Task5\DFF.vhd=VHDL Source Code
+.\src\Task5\TestBench\dff_TB.vhd=VHDL Test Bench
+.\src\Task5\TestBench\dff_TB_runtest.do=Macro
+.\src\Task6\DFF_Enable_Async.vhd=VHDL Source Code
+.\src\Task6\TestBench\dff_enable_async_TB.vhd=VHDL Test Bench
+.\src\Task6\TestBench\dff_enable_async_TB_runtest.do=Macro
+.\src\Task7\TFF.vhd=VHDL Source Code
+.\src\Task7\TestBench\tff_TB.vhd=VHDL Test Bench
+.\src\Task7\TestBench\tff_TB_runtest.do=Macro
+.\src\Task8\RSFF.vhd=VHDL Source Code
+.\src\Task8\TestBench\rsff_TB.vhd=VHDL Test Bench
+.\src\Task8\TestBench\rsff_TB_runtest.do=Macro
+.\src\Task9\JKFF.vhd=VHDL Source Code
+.\src\Task9\TestBench\jkff_TB.vhd=VHDL Test Bench
+.\src\Task9\TestBench\jkff_TB_runtest.do=Macro
+

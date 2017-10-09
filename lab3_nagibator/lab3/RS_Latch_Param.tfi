@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+RS_Latch_Param instance_name (
+    .R(R), 
+    .S(S), 
+    .Q(Q), 
+    .nQ(nQ)
+    );
+
+
